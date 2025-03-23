@@ -25,3 +25,5 @@ WTForms==3.2.1
 zipp==3.21.0
 gunicorn==23.0.0
 packaging==24.2
+netlify_functions==1.6.0 
+netlify_lambda_wsgi

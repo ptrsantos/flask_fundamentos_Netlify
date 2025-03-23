@@ -1,0 +1,11 @@
+[build]
+  functions = "netlify/functions"  # Diretório onde suas funções serverless estão
+  publish = "public" # Diretório onde os arquivos estáticos estão (se houver)
+
+[functions]
+  included_files = ["**/*.txt"]  # Include all text files, adjust to your needs
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/api/:splat" # Redireciona tudo para a função serverless
+  status = 200 #  Mantém o URL no navegador
